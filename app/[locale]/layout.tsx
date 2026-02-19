@@ -1,18 +1,12 @@
 import type { ReactNode } from 'react';
 import type { Metadata } from 'next';
-import { Inter } from 'next/font/google';
 import { notFound } from 'next/navigation';
-import { NextIntlClientProvider, useMessages } from 'next-intl';
+import { NextIntlClientProvider } from 'next-intl';
+import { getMessages } from 'next-intl/server';
 import { locales, type Locale } from '@/i18n';
 import { Header } from '@/components/Header';
 import { Footer } from '@/components/Footer';
 import '@/app/globals.css';
-
-const inter = Inter({
-  subsets: ['latin', 'latin-ext'],
-  display: 'swap',
-  variable: '--font-inter',
-});
 
 export const metadata: Metadata = {
   metadataBase: new URL('https://colhybri.com'),
@@ -30,23 +24,26 @@ export function generateStaticParams() {
   return locales.map((locale) => ({ locale }));
 }
 
-export default function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
+export default async function LocaleLayout({ children, params: { locale } }: LocaleLayoutProps) {
   if (!locales.includes(locale as Locale)) {
     notFound();
   }
 
-  const messages = useMessages();
+  const messages = await getMessages();
 
   const fontClass = locale === 'zh'
     ? 'font-zh'
     : locale === 'ja'
       ? 'font-ja'
-      : inter.variable;
+      : '';
 
   return (
     <html lang={locale} className={fontClass}>
       <head>
-        {/* Google Fonts for CJK */}
+        <link
+          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
+          rel="stylesheet"
+        />
         {(locale === 'zh' || locale === 'ja') && (
           <link
             href={`https://fonts.googleapis.com/css2?family=${
@@ -55,12 +52,8 @@ export default function LocaleLayout({ children, params: { locale } }: LocaleLay
             rel="stylesheet"
           />
         )}
-        <link
-          href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700;800&display=swap"
-          rel="stylesheet"
-        />
       </head>
-      <body className={`${inter.className} bg-colhybri-light text-colhybri-dark min-h-screen flex flex-col`}>
+      <body className="font-sans bg-colhybri-light text-colhybri-dark min-h-screen flex flex-col">
         <NextIntlClientProvider locale={locale} messages={messages}>
           <Header />
           <main className="flex-1">
