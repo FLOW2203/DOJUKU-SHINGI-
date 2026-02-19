@@ -210,6 +210,12 @@
       "terms": "服务条款"
     }
   },
+  "localStats": {
+    "title": "中国本地影响力",
+    "subtitle": "真实经济数据展示COLHYBRI如何改变您的社区。",
+    "inhabitants": "人口",
+    "subscription": "COLHYBRI订阅"
+  },
   "common": {
     "learnMore": "了解更多",
     "getStarted": "立即开始",

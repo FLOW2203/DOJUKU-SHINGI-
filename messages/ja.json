@@ -210,6 +210,12 @@
       "terms": "利用規約"
     }
   },
+  "localStats": {
+    "title": "日本でのローカルインパクト",
+    "subtitle": "COLHYBRIがあなたのコミュニティをどう変えるか、実際の経済データでご覧ください。",
+    "inhabitants": "人口",
+    "subscription": "COLHYBRIサブスクリプション"
+  },
   "common": {
     "learnMore": "詳しく見る",
     "getStarted": "始めましょう",

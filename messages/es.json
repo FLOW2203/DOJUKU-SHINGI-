@@ -210,6 +210,12 @@
       "terms": "Términos de Servicio"
     }
   },
+  "localStats": {
+    "title": "Impacto Local en España",
+    "subtitle": "Datos económicos reales que muestran cómo COLHYBRI puede transformar tu comunidad.",
+    "inhabitants": "habitantes",
+    "subscription": "Suscripción COLHYBRI"
+  },
   "common": {
     "learnMore": "Saber Más",
     "getStarted": "Comenzar",

@@ -210,6 +210,12 @@
       "terms": "Conditions d'utilisation"
     }
   },
+  "localStats": {
+    "title": "Impact Local en France",
+    "subtitle": "Des données économiques réelles montrant comment COLHYBRI peut transformer votre communauté.",
+    "inhabitants": "habitants",
+    "subscription": "Abonnement COLHYBRI"
+  },
   "common": {
     "learnMore": "En savoir plus",
     "getStarted": "Commencer",

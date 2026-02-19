@@ -210,6 +210,12 @@
       "terms": "Terms of Service"
     }
   },
+  "localStats": {
+    "title": "Local Impact in Your Country",
+    "subtitle": "Real economic data showing how COLHYBRI can transform your community.",
+    "inhabitants": "inhabitants",
+    "subscription": "COLHYBRI subscription"
+  },
   "common": {
     "learnMore": "Learn More",
     "getStarted": "Get Started",

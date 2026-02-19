@@ -210,6 +210,12 @@
       "terms": "Termos de Servico"
     }
   },
+  "localStats": {
+    "title": "Impacto Local no Brasil",
+    "subtitle": "Dados econômicos reais mostrando como o COLHYBRI pode transformar sua comunidade.",
+    "inhabitants": "habitantes",
+    "subscription": "Assinatura COLHYBRI"
+  },
   "common": {
     "learnMore": "Saiba Mais",
     "getStarted": "Comece Agora",

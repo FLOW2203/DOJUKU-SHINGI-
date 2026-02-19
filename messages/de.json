@@ -210,6 +210,12 @@
       "terms": "Nutzungsbedingungen"
     }
   },
+  "localStats": {
+    "title": "Lokale Wirkung in Deutschland",
+    "subtitle": "Echte Wirtschaftsdaten zeigen, wie COLHYBRI Ihre Gemeinschaft transformieren kann.",
+    "inhabitants": "Einwohner",
+    "subscription": "COLHYBRI-Abonnement"
+  },
   "common": {
     "learnMore": "Mehr erfahren",
     "getStarted": "Jetzt starten",
