@@ -72,8 +72,8 @@ export function getAbsoluteUrl(path: string): string {
 }
 
 export function getHreflangAlternates(routeKey: string): Array<{ locale: string; url: string }> {
-  const locales: Locale[] = ['en', 'fr', 'es', 'pt', 'de', 'zh', 'ja'];
-  const alternates = locales.map((locale) => ({
+  const allLocales: Locale[] = ['en', 'fr', 'es', 'pt', 'de', 'zh', 'ja'];
+  const alternates: Array<{ locale: string; url: string }> = allLocales.map((locale) => ({
     locale,
     url: getAbsoluteUrl(getLocalizedPath(routeKey, locale)),
   }));
