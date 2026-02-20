@@ -6,6 +6,8 @@ import { generatePageMetadata, generateOrganizationJsonLd, generateWebSiteJsonLd
 import { getLocalizedPath } from '@/lib/navigation';
 import { JsonLd } from '@/components/JsonLd';
 import { AnimatedCounter } from '@/components/AnimatedCounter';
+import { LocalStats } from '@/components/LocalStats';
+import { ThirdPlaceHero } from '@/components/ThirdPlaceHero';
 
 interface PageProps {
   params: { locale: string };
@@ -53,9 +55,9 @@ export default function HomePage({ params: { locale } }: PageProps) {
           </p>
 
           <div className="flex flex-col sm:flex-row gap-4 justify-center mb-16">
-            <Link href={getLocalizedPath('contact', l)} className="btn-primary text-lg px-8 py-4">
+            <a href="https://colhybri.com" target="_blank" rel="noopener noreferrer" className="btn-primary text-lg px-8 py-4">
               {t('hero.cta')}
-            </Link>
+            </a>
             <Link href={getLocalizedPath('how-it-works', l)} className="btn-secondary text-lg px-8 py-4">
               {t('hero.ctaSecondary')}
             </Link>
@@ -188,6 +190,12 @@ export default function HomePage({ params: { locale } }: PageProps) {
         </div>
       </section>
 
+      {/* Trust & Loneliness Barometer — Third Place Section */}
+      <ThirdPlaceHero locale={locale} />
+
+      {/* Local Impact Section */}
+      <LocalStats locale={l} />
+
       {/* Pricing Section */}
       <section className="bg-white" id="pricing">
         <div className="section-container">
@@ -290,9 +298,9 @@ export default function HomePage({ params: { locale } }: PageProps) {
               — Florent Gibert, Founder &amp; CEO, ONLYMORE Group
             </footer>
           </blockquote>
-          <Link href={getLocalizedPath('contact', l)} className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-colhybri-primary font-bold text-lg hover:bg-white/90 transition-colors">
+          <a href="https://colhybri.com" target="_blank" rel="noopener noreferrer" className="inline-flex items-center justify-center px-8 py-4 rounded-lg bg-white text-colhybri-primary font-bold text-lg hover:bg-white/90 transition-colors">
             {t('hero.cta')}
-          </Link>
+          </a>
         </div>
       </section>
     </>

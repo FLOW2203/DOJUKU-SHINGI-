@@ -210,6 +210,44 @@
       "terms": "Termos de Servico"
     }
   },
+  "localStats": {
+    "title": "Impacto Local no Brasil",
+    "subtitle": "Dados econômicos reais mostrando como o COLHYBRI pode transformar sua comunidade.",
+    "inhabitants": "habitantes",
+    "subscription": "Assinatura COLHYBRI"
+  },
+  "thirdPlace": {
+    "label": "Barometro de Confianca e Solidao",
+    "headline": "1,4 bilhao de adultos estao solitarios. COLHYBRI e o terceiro lugar digital.",
+    "subheadline": "A confianca social esta desmoronando em todo o mundo. Exclusao financeira e solidao se alimentam mutuamente. COLHYBRI constroi comunidade por meio da inclusao financeira.",
+    "stats": {
+      "lonely": "Adultos solitarios no mundo",
+      "distrust": "Taxa de desconfianca na Franca",
+      "increase": "Aumento do isolamento pos-2019",
+      "ministers": "Paises com ministro da solidao"
+    },
+    "cta": "Explorar dados regionais",
+    "sources": "Fontes"
+  },
+  "regionImpact": {
+    "label": "Impacto Regional",
+    "population": "Populacao adulta",
+    "potential": "Potencial COLHYBRI",
+    "insightTitle": "Perspectiva Chave",
+    "answerTitle": "A Resposta COLHYBRI",
+    "keyNumbers": "Numeros Chave",
+    "loneliness": "Taxa de solidao",
+    "trust": "Taxa de confianca",
+    "unbanked": "Taxa de nao bancarizacao",
+    "sourcesTitle": "Fontes de Dados",
+    "otherRegions": "Explorar Outras Regioes",
+    "ctaHeadline": "Junte-se ao Movimento",
+    "ctaButton": "Descubra COLHYBRI",
+    "faq": {
+      "q1": "Como o COLHYBRI pode ajudar esta regiao?",
+      "q2": "O que os dados nos dizem?"
+    }
+  },
   "common": {
     "learnMore": "Saiba Mais",
     "getStarted": "Comece Agora",

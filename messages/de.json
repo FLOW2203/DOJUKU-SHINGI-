@@ -210,6 +210,44 @@
       "terms": "Nutzungsbedingungen"
     }
   },
+  "localStats": {
+    "title": "Lokale Wirkung in Deutschland",
+    "subtitle": "Echte Wirtschaftsdaten zeigen, wie COLHYBRI Ihre Gemeinschaft transformieren kann.",
+    "inhabitants": "Einwohner",
+    "subscription": "COLHYBRI-Abonnement"
+  },
+  "thirdPlace": {
+    "label": "Vertrauens- und Einsamkeitsbarometer",
+    "headline": "1,4 Milliarden Erwachsene sind einsam. COLHYBRI ist der digitale dritte Ort.",
+    "subheadline": "Das soziale Vertrauen bricht weltweit zusammen. Finanzielle Ausgrenzung und Einsamkeit verstärken sich gegenseitig. COLHYBRI baut Gemeinschaft durch finanzielle Inklusion.",
+    "stats": {
+      "lonely": "Einsame Erwachsene weltweit",
+      "distrust": "Misstrauensrate in Frankreich",
+      "increase": "Anstieg der Isolation seit 2019",
+      "ministers": "Länder mit Einsamkeitsminister"
+    },
+    "cta": "Regionale Daten erkunden",
+    "sources": "Quellen"
+  },
+  "regionImpact": {
+    "label": "Regionale Wirkung",
+    "population": "Erwachsenenbevölkerung",
+    "potential": "COLHYBRI-Potenzial",
+    "insightTitle": "Zentrale Erkenntnis",
+    "answerTitle": "Die COLHYBRI-Antwort",
+    "keyNumbers": "Schlüsselzahlen",
+    "loneliness": "Einsamkeitsrate",
+    "trust": "Vertrauensrate",
+    "unbanked": "Nicht-Bankarisierungsrate",
+    "sourcesTitle": "Datenquellen",
+    "otherRegions": "Andere Regionen Erkunden",
+    "ctaHeadline": "Werden Sie Teil der Bewegung",
+    "ctaButton": "COLHYBRI Entdecken",
+    "faq": {
+      "q1": "Wie kann COLHYBRI dieser Region helfen?",
+      "q2": "Was sagen uns die Daten?"
+    }
+  },
   "common": {
     "learnMore": "Mehr erfahren",
     "getStarted": "Jetzt starten",

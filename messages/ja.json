@@ -210,6 +210,44 @@
       "terms": "利用規約"
     }
   },
+  "localStats": {
+    "title": "日本でのローカルインパクト",
+    "subtitle": "COLHYBRIがあなたのコミュニティをどう変えるか、実際の経済データでご覧ください。",
+    "inhabitants": "人口",
+    "subscription": "COLHYBRIサブスクリプション"
+  },
+  "thirdPlace": {
+    "label": "信頼と孤独のバロメーター",
+    "headline": "14億人の成人が孤独を感じています。COLHYBRIはデジタルサードプレイスです。",
+    "subheadline": "世界中で社会的信頼が崩壊しています。金融排除と孤独は相互に助長し合います。COLHYBRIは金融包摂を通じてコミュニティを構築します。",
+    "stats": {
+      "lonely": "世界の孤独な成人",
+      "distrust": "フランスの不信率",
+      "increase": "2019年以降の孤立増加",
+      "ministers": "孤独担当大臣を持つ国"
+    },
+    "cta": "地域データを探索する",
+    "sources": "出典"
+  },
+  "regionImpact": {
+    "label": "地域インパクト",
+    "population": "成人人口",
+    "potential": "COLHYBRIポテンシャル",
+    "insightTitle": "重要な洞察",
+    "answerTitle": "COLHYBRIの回答",
+    "keyNumbers": "主要な数値",
+    "loneliness": "孤独率",
+    "trust": "信頼率",
+    "unbanked": "銀行未利用率",
+    "sourcesTitle": "データソース",
+    "otherRegions": "他の地域を探索",
+    "ctaHeadline": "ムーブメントに参加する",
+    "ctaButton": "COLHYBRIを発見する",
+    "faq": {
+      "q1": "COLHYBRIはこの地域をどう支援できますか？",
+      "q2": "データは何を示していますか？"
+    }
+  },
   "common": {
     "learnMore": "詳しく見る",
     "getStarted": "始めましょう",

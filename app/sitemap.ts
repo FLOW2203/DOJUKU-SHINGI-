@@ -1,6 +1,7 @@
 import type { MetadataRoute } from 'next';
 import { locales } from '@/i18n';
 import { routeMap, BASE_URL, getLocalizedPath } from '@/lib/navigation';
+import { ALL_REGIONS } from '@/data/trust-data';
 
 export default function sitemap(): MetadataRoute.Sitemap {
   const entries: MetadataRoute.Sitemap = [];
@@ -26,6 +27,27 @@ export default function sitemap(): MetadataRoute.Sitemap {
         lastModified: now,
         changeFrequency: isHome ? 'daily' : 'weekly',
         priority: isHome ? 1.0 : routeKey === 'miami' ? 0.9 : 0.8,
+        alternates: { languages },
+      });
+    }
+  }
+
+  // Regional impact pages
+  for (const region of ALL_REGIONS) {
+    for (const locale of locales) {
+      const impactSlug = routeMap.impact[locale] || 'impact';
+      const languages: Record<string, string> = {};
+      for (const altLocale of locales) {
+        const altImpactSlug = routeMap.impact[altLocale] || 'impact';
+        languages[altLocale] = `${BASE_URL}/${altLocale}/${altImpactSlug}/${region}`;
+      }
+      languages['x-default'] = `${BASE_URL}/en/impact/${region}`;
+
+      entries.push({
+        url: `${BASE_URL}/${locale}/${impactSlug}/${region}`,
+        lastModified: now,
+        changeFrequency: 'weekly',
+        priority: 0.85,
         alternates: { languages },
       });
     }

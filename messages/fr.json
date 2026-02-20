@@ -210,6 +210,44 @@
       "terms": "Conditions d'utilisation"
     }
   },
+  "localStats": {
+    "title": "Impact Local en France",
+    "subtitle": "Des données économiques réelles montrant comment COLHYBRI peut transformer votre communauté.",
+    "inhabitants": "habitants",
+    "subscription": "Abonnement COLHYBRI"
+  },
+  "thirdPlace": {
+    "label": "Barometre Confiance & Solitude",
+    "headline": "1,4 milliard d'adultes sont seuls. COLHYBRI est le tiers-lieu numerique.",
+    "subheadline": "La confiance sociale s'effondre partout dans le monde. Exclusion financiere et solitude s'alimentent mutuellement. COLHYBRI construit la communaute par l'inclusion financiere.",
+    "stats": {
+      "lonely": "Adultes seuls dans le monde",
+      "distrust": "Taux de defiance en France",
+      "increase": "Hausse de l'isolement post-2019",
+      "ministers": "Pays avec ministre de la solitude"
+    },
+    "cta": "Explorer les donnees regionales",
+    "sources": "Sources"
+  },
+  "regionImpact": {
+    "label": "Impact Regional",
+    "population": "Population adulte",
+    "potential": "Potentiel COLHYBRI",
+    "insightTitle": "Enseignement Cle",
+    "answerTitle": "La Reponse COLHYBRI",
+    "keyNumbers": "Chiffres Cles",
+    "loneliness": "Taux de solitude",
+    "trust": "Taux de confiance",
+    "unbanked": "Taux de non-bancarisation",
+    "sourcesTitle": "Sources des Donnees",
+    "otherRegions": "Explorer d'Autres Regions",
+    "ctaHeadline": "Rejoignez le Mouvement",
+    "ctaButton": "Decouvrir COLHYBRI",
+    "faq": {
+      "q1": "Comment COLHYBRI peut-il aider cette region ?",
+      "q2": "Que nous disent les donnees ?"
+    }
+  },
   "common": {
     "learnMore": "En savoir plus",
     "getStarted": "Commencer",

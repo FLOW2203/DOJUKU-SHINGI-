@@ -4,20 +4,24 @@ import { BASE_URL, getHreflangAlternates, getLocalizedPath } from './navigation'
 
 const localeCountryMap: Record<string, string> = {
   en: 'en_US',
+  'en-gb': 'en_GB',
   fr: 'fr_FR',
   es: 'es_US',
   pt: 'pt_BR',
   de: 'de_DE',
+  it: 'it_IT',
   zh: 'zh_CN',
   ja: 'ja_JP',
 };
 
 const taglines: Record<string, string> = {
   en: 'Financial Inclusion Through Local Commerce',
+  'en-gb': 'Financial Inclusion Through Local Commerce',
   fr: "L'inclusion financière par le commerce local",
   es: 'Inclusión financiera a través del comercio local',
   pt: 'Inclusão financeira através do comércio local',
   de: 'Finanzielle Inklusion durch lokalen Handel',
+  it: 'Inclusione Finanziaria Attraverso il Commercio Locale',
   zh: '通过本地商业实现金融普惠',
   ja: '地域商業を通じた金融包摂',
 };
@@ -118,7 +122,7 @@ export function generateOrganizationJsonLd(locale: Locale) {
       '@type': 'ContactPoint',
       email: 'onlymore2024@gmail.com',
       contactType: 'customer service',
-      availableLanguage: ['English', 'French', 'Spanish', 'Portuguese', 'German', 'Chinese', 'Japanese'],
+      availableLanguage: ['English', 'French', 'Spanish', 'Portuguese', 'German', 'Italian', 'Chinese', 'Japanese'],
     },
     sameAs: [],
     inLanguage: localeCountryMap[locale],

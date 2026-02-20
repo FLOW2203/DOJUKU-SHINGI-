@@ -210,6 +210,44 @@
       "terms": "服务条款"
     }
   },
+  "localStats": {
+    "title": "中国本地影响力",
+    "subtitle": "真实经济数据展示COLHYBRI如何改变您的社区。",
+    "inhabitants": "人口",
+    "subscription": "COLHYBRI订阅"
+  },
+  "thirdPlace": {
+    "label": "信任与孤独晴雨表",
+    "headline": "14亿成年人感到孤独。COLHYBRI是数字第三空间。",
+    "subheadline": "全球社会信任正在崩塌。金融排斥与孤独相互助长。COLHYBRI通过金融普惠构建社区。",
+    "stats": {
+      "lonely": "全球孤独成年人",
+      "distrust": "法国不信任率",
+      "increase": "2019年后孤立增长",
+      "ministers": "设有孤独部长的国家"
+    },
+    "cta": "探索区域数据",
+    "sources": "数据来源"
+  },
+  "regionImpact": {
+    "label": "区域影响",
+    "population": "成年人口",
+    "potential": "COLHYBRI潜力",
+    "insightTitle": "关键洞察",
+    "answerTitle": "COLHYBRI的回答",
+    "keyNumbers": "关键数据",
+    "loneliness": "孤独率",
+    "trust": "信任率",
+    "unbanked": "无银行账户率",
+    "sourcesTitle": "数据来源",
+    "otherRegions": "探索其他地区",
+    "ctaHeadline": "加入我们",
+    "ctaButton": "发现COLHYBRI",
+    "faq": {
+      "q1": "COLHYBRI如何帮助该地区？",
+      "q2": "数据告诉我们什么？"
+    }
+  },
   "common": {
     "learnMore": "了解更多",
     "getStarted": "立即开始",
