@@ -5,6 +5,8 @@ import type { Locale } from '@/i18n';
 import { generatePageMetadata } from '@/lib/metadata';
 import { getLocalizedPath } from '@/lib/navigation';
 import { JsonLd } from '@/components/JsonLd';
+import { GlobalImpactCounter } from '@/components/trust/GlobalImpactCounter';
+import { TrustMapSection } from '@/components/trust/TrustMapSection';
 
 interface PageProps {
   params: { locale: string };
@@ -130,6 +132,12 @@ export default function ImpactPage({ params: { locale } }: PageProps) {
           </div>
         </div>
       </section>
+
+      {/* Global Loneliness Counter */}
+      <GlobalImpactCounter locale={locale} />
+
+      {/* World Trust Map */}
+      <TrustMapSection locale={locale} />
 
       {/* Internal Links (Cocon Semantique) */}
       <section className="bg-colhybri-light">
