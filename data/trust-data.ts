@@ -453,4 +453,6 @@ export const LOCALE_DEFAULT_REGION: Record<string, string> = {
   it: 'france',
   zh: 'usa',
   ja: 'japan',
+  hi: 'india',
+  pl: 'eastern-europe',
 };
