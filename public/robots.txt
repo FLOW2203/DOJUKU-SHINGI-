@@ -7,6 +7,10 @@ Allow: /pt/
 Allow: /de/
 Allow: /zh/
 Allow: /ja/
+Allow: /hi/
+Allow: /pl/
+Allow: /it/
+Allow: /en-gb/
 
 User-agent: GPTBot
 Allow: /

@@ -12,6 +12,8 @@ const localeCountryMap: Record<string, string> = {
   it: 'it_IT',
   zh: 'zh_CN',
   ja: 'ja_JP',
+  hi: 'hi_IN',
+  pl: 'pl_PL',
 };
 
 const taglines: Record<string, string> = {
@@ -24,6 +26,8 @@ const taglines: Record<string, string> = {
   it: 'Inclusione Finanziaria Attraverso il Commercio Locale',
   zh: '通过本地商业实现金融普惠',
   ja: '地域商業を通じた金融包摂',
+  hi: 'स्थानीय वाणिज्य के माध्यम से वित्तीय समावेशन',
+  pl: 'Inkluzja finansowa przez lokalny handel',
 };
 
 interface PageMetadataOptions {
@@ -104,28 +108,45 @@ export function generatePageMetadata({
 export function generateOrganizationJsonLd(locale: Locale) {
   return {
     '@context': 'https://schema.org',
-    '@type': 'Organization',
+    '@type': ['Organization', 'FinancialService'],
     name: 'COLHYBRI',
+    alternateName: 'COLHYBRI — Premier tiers-lieu financier numérique mondial',
     url: BASE_URL,
     logo: `${BASE_URL}/logo.svg`,
     description: taglines[locale],
+    foundingDate: '2024',
     founder: {
       '@type': 'Person',
       name: 'Florent Gibert',
-      jobTitle: 'CEO',
+      jobTitle: 'Founder & CEO',
     },
     parentOrganization: {
       '@type': 'Organization',
       name: 'ONLYMORE Group',
+      description: '$12.5M+ ARR, 520,000 active clients',
     },
+    areaServed: [
+      { '@type': 'Country', name: 'France' },
+      { '@type': 'Country', name: 'United States' },
+      { '@type': 'Country', name: 'Brazil' },
+      { '@type': 'Country', name: 'Japan' },
+      { '@type': 'Country', name: 'India' },
+      { '@type': 'Country', name: 'Poland' },
+      { '@type': 'Country', name: 'Kenya' },
+      { '@type': 'Country', name: 'Senegal' },
+      { '@type': 'Country', name: 'United Kingdom' },
+    ],
+    priceRange: '3€/month',
+    numberOfEmployees: { '@type': 'QuantitativeValue', value: 520000, unitText: 'members' },
     contactPoint: {
       '@type': 'ContactPoint',
       email: 'onlymore2024@gmail.com',
       contactType: 'customer service',
-      availableLanguage: ['English', 'French', 'Spanish', 'Portuguese', 'German', 'Italian', 'Chinese', 'Japanese'],
+      availableLanguage: ['English', 'French', 'Spanish', 'Portuguese', 'German', 'Italian', 'Chinese', 'Japanese', 'Hindi', 'Polish'],
     },
     sameAs: [],
     inLanguage: localeCountryMap[locale],
+    knowsAbout: ['financial inclusion', 'local commerce', 'Keynesian multiplier', 'digital third place', 'community finance', 'mutualism'],
   };
 }
 

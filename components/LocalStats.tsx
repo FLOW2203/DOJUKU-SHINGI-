@@ -37,6 +37,8 @@ function formatNumber(num: number, locale: string): string {
     pt: 'pt-BR',
     ja: 'ja-JP',
     zh: 'zh-CN',
+    hi: 'hi-IN',
+    pl: 'pl-PL',
   };
   return new Intl.NumberFormat(localeMap[locale] || 'en-US', {
     maximumFractionDigits: 0,
